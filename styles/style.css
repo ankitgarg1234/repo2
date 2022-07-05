@@ -1,0 +1,387 @@
+ * {
+     padding: 0px;
+     margin: 0px;
+ }
+
+ body {
+
+     width: 100%;
+     height: 100%;
+     background-image: linear-gradient(to right bottom, rgb(247, 46, 46), rgb(233, 162, 30), rgb(238, 238, 44));
+     background-size: 100vw 100vh;
+     background-attachment: fixed;
+     background-position: fixed;
+ }
+
+ .heading {
+     color: white;
+     text-align: center;
+     letter-spacing: 6px;
+     font-size: 4vw;
+     margin-bottom: 80px;
+ }
+
+ #form1 {
+     border: 2px dashed yellow;
+     height: 400px;
+     width: 35vw;
+     margin: 0px auto;
+     padding: 10px;
+     box-shadow: 20px 20px 20px black;
+     background-color: rgb(0, 0, 0, 0.8);
+     margin-top: 20vh;
+     margin-bottom: 50px;
+
+ }
+
+ .text {
+     color: goldenrod;
+     margin-bottom: 5px;
+     margin-top: 5px;
+ }
+
+ .typearea {
+     width: 100%;
+ }
+
+ #button {
+     display: block;
+     float: right;
+     width: 70px;
+     height: 30px;
+     border-radius: 10px;
+     box-shadow: 6px 6px 15px black;
+     transition: all 0.3s;
+
+ }
+
+ span {
+     color: goldenrod;
+     display: inline-block;
+     width: 25%;
+
+
+ }
+
+ #button:hover {
+     transform: translateY(-2px);
+     box-shadow: 4px 6px 12px;
+     background-color: rgb(64, 213, 233);
+ }
+
+ #game {
+     font-size: 40px;
+     margin: 0px auto;
+     margin-top: 2vh;
+     box-shadow: -10px 10px 20px black;
+     background-color: rgb(26, 2, 56);
+     transition: all 1s;
+ }
+
+ #game .obox div {
+     border-radius: 10px;
+
+     box-sizing: border-box;
+     line-height: 70px;
+     cursor: pointer;
+
+
+ }
+
+ #game .obox {
+     text-align: center;
+     box-sizing: border-box;
+     line-height: 80px;
+     display: inline-block;
+     width: 80px;
+     height: 80px;
+
+
+ }
+
+ #game span {
+     color: red;
+     transform: rotateY(180deg);
+     text-align: center;
+     font-size: 30px;
+     width: 100%;
+
+ }
+
+ #stopwatch {
+     color: white;
+     background-color: rgba(0, 0, 0, 0.4);
+     height: 0px;
+     width: 0px;
+     border-radius: 6px 0px 0px 6px;
+     font-size: 24px;
+
+     box-sizing: border-box;
+     visibility: hidden;
+     text-align: center;
+     margin-right: 0px;
+     float: right;
+     box-shadow: -4px 4px 10px orange;
+ }
+
+ #moves {
+     color: white;
+     background-color: rgba(0, 0, 0, 0.4);
+     border-radius: 0px 6px 6px 0px;
+     font-size: 24px;
+     text-align: center;
+     visibility: hidden;
+     float: right;
+     box-shadow: 4px 4px 10px orange;
+ }
+
+ #heading {
+     font-size: 80px;
+     text-align: center;
+     color: rgb(125, 155, 42);
+     text-align: center;
+     text-shadow: 4px 6px 5px black;
+     margin-left: 0px;
+
+ }
+
+ #ahead {
+     height: 0px;
+     width: 0px;
+
+     margin: 0px auto;
+ }
+
+ #newgame {
+     width: 0px;
+     height: 0px;
+     border-radius: 6px;
+     float: left;
+     background-color: rgba(0, 0, 0, 0.4);
+     color: white;
+     visibility: hidden;
+     text-align: center;
+     font-size: 18px;
+     box-sizing: border-box;
+     line-height: 60px;
+     cursor: pointer;
+     box-shadow: 4px 4px 10px orange;
+
+ }
+
+ .box {
+     font-size: 16px;
+ }
+
+ @keyframes zoom {
+     0% {
+         width: 70px;
+         height: 70px;
+         line-height: 70px;
+     }
+
+     25% {
+         width: 60px;
+         height: 60px;
+         line-height: 60px;
+
+     }
+
+     50% {
+         width: 70px;
+         height: 70px;
+         line-height: 70px;
+
+     }
+
+     75% {
+         width: 75px;
+         height: 75px;
+         line-height: 75px;
+
+     }
+
+     100% {
+         width: 70px;
+         height: 70px;
+         line-height: 70px;
+
+
+     }
+ }
+
+ @keyframes zoom1 {
+     0% {
+         width: 70px;
+         height: 70px;
+         line-height: 70px;
+     }
+
+     25% {
+         width: 60px;
+         height: 60px;
+         line-height: 60px;
+
+     }
+
+     50% {
+         width: 70px;
+         height: 70px;
+         line-height: 70px;
+
+     }
+
+     75% {
+         width: 75px;
+         height: 75px;
+         line-height: 75px;
+
+     }
+
+     100% {
+         width: 70px;
+         height: 70px;
+         line-height: 70px;
+
+
+     }
+ }
+
+ #pause {
+     background-color: rgba(0, 0, 0, 0.8);
+     text-align: center;
+     color: white;
+     font-size: 26px;
+     border-radius: 10px;
+     letter-spacing: 4px;
+     visibility: hidden;
+     margin: auto auto;
+     margin-top: 20px;
+     cursor: pointer;
+     box-shadow: 6px 6px 10px black;
+     margin-bottom: 20px;
+     transition: all 0.4;
+
+ }
+
+ #pause:hover {
+     transform: translateY(-2px);
+     box-shadow: 8px 8px 14px black;
+ }
+
+ #scontrol {
+
+     background-color: rgba(3, 26, 77, 0.8);
+     color: white;
+     border-radius: 6px;
+     text-align: center;
+     line-height: 40px;
+     margin: 10px;
+     box-shadow: 4px 4px 10px black;
+     transition: all 0.2;
+
+
+ }
+
+ #scontrol:hover {
+     transform: translateY(-2px);
+     box-shadow: 6px 6px 14px black;
+ }
+
+ #leader {
+     background-color: rgba(3, 26, 77, 0.8);
+     color: white;
+     border-radius: 6px;
+     text-align: center;
+     line-height: 40px;
+     margin: 10px;
+     box-shadow: 4px 4px 10px black;
+     transition: all 0.2;
+ }
+
+ #leader:hover {
+     transform: translateY(-2px);
+     box-shadow: 6px 6px 14px black;
+ }
+
+ #leaderb {
+     font-size: 30px;
+     letter-spacing: 4px;
+     background-color: yellowgreen;
+     text-align: center;
+     box-shadow: 4px 4px 15px black;
+     margin-bottom: 20px;
+
+ }
+
+ #leadbox {
+
+     width: 250px;
+     height: 300px;
+     background-color: rgb(255, 204, 109);
+     border: 2px solid yellow;
+     margin: auto;
+     margin-top: 30vh;
+     box-shadow: 8px 8px 20px black;
+     clear: both;
+     text-align: center;
+     line-height: 300px;
+     font-size: 20px;
+
+
+
+
+ }
+
+ #back {
+     float: right;
+     background-color: rgba(3, 26, 77, 0.8);
+     width: 120px;
+     height: 40px;
+     line-height: 40px;
+     border-radius: 10px;
+     margin-right: 30px;
+     margin-top: 30px;
+     color: white;
+     text-align: center;
+     font-size: 20px;
+     box-shadow: 4px 4px 10px black;
+     transition: all 0.6s;
+     letter-spacing: 3px;
+ }
+
+ #back:hover {
+
+     box-shadow: 6px 6px 15px black;
+ }
+
+ @media (max-width:630px) {
+     #form1 {
+         width: 240px;
+
+     }
+
+     .heading {
+         font-size: 30px;
+     }
+
+     #heading {
+         font-size: 60px;
+         letter-spacing: 0px;
+     }
+ }
+
+ @media (max-width:580px) {
+     #game .obox div {
+         width: 70px;
+         height: 70px;
+         line-height: 70px;
+     }
+
+     #game .obox {
+         width: 80px;
+         height: 80px;
+         line-height: 80px;
+
+     }
+ }
